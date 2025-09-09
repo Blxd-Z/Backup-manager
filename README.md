@@ -16,7 +16,9 @@ Este repositorio contiene un script en Bash para realizar backups de directorios
 Para que el script funcione correctamente:
 
 1. **Bash** instalado (por defecto en sistemas Linux).  
-2. **mailx** instalado para enviar notificaciones locales:  
+2. **mailx** instalado para enviar notificaciones locales:
+3. **sendmail** instalado y activo
 
 ```bash
 sudo dnf install mailx
+sudo systemctl enable --now sendmail
