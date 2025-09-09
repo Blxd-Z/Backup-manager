@@ -6,7 +6,7 @@ source ../config/backup.conf
 # Fecha y hora
 fecha=$(date +%d%m%y)
 hora=$(date +%H_%M)
-logfile="/var/log/backup_${fecha}_${hora}.log"
+logfile="../logs/backup_${fecha}_${hora}.log"
 
 # Comprimir directorios
 tar -czf "$DIR_DESTINO/backup_${fecha}.tar.gz" "$DIRECTORIOS"
